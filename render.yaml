@@ -22,4 +22,18 @@ services:
         value: your-gmail-app-password
       - key: EMAIL_RECEIVER
         value: tejavendra2006@gmail.com
-        
+        services:
+  - type: web
+    name: welding-backend
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn backendServer.wsgi:application"
+    autoDeploy: true
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: backendServer.settings
+    migrationsCommand: |
+      python manage.py makemigrations
+      python manage.py migrate
+
