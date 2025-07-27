@@ -153,9 +153,6 @@ cloudinary.config(secure=True)
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # Only if you store custom CSS here
-]
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
