@@ -32,11 +32,15 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "fallback-insecure-key")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True 
 
-ALLOWED_HOSTS = ['https://raju-weldings.onrender.com/']
+ALLOWED_HOSTS = ['raju-weldings.onrender.com', 'backend-welding-1.onrender.com']
 
 CORS_ALLOWED_ORIGINS = [
-    'https://raju-weldings.onrender.com/'  # 👈 React frontend
+    'https://raju-weldings.onrender.com'
 ]
+
+# Remove this line if using specific origins:
+# CORS_ALLOW_ALL_ORIGINS = True
+
 CORS_ALLOW_ALL_ORIGINS = True
 # Application definition
 
