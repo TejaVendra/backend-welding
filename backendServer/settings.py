@@ -144,7 +144,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'tejavendra2006@gmail.com'
 EMAIL_HOST_PASSWORD = 'wgkh tdpk zwwu apzj'
-EMAIL_RECEIVER = 'tejavendra2006@gmail.com'
+EMAIL_RECEIVER = 'tejavitap@gmail.com'
 
 
 
